@@ -32,6 +32,8 @@ public class ControllerRegistroUsuario {
             }
             mensaje:"campos erroneos";
             */
+
+            
         }
 
         public boolean textFieldVacios(JFXTextField campoDeTexto){

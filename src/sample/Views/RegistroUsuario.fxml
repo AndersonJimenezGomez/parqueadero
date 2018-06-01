@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelRegistroUsuario" prefHeight="400.0" prefWidth="360.0" style="-fx-background-color: #323c4c;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.ControllerRegistroUsuario">
+   <children>
+      <Label prefHeight="33.0" prefWidth="98.0" text="Registrar cliente" textFill="#8b8c8e" />
+      <Separator layoutX="94.0" layoutY="13.0" prefHeight="5.0" prefWidth="228.0" />
+      <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="145.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/usuario.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nombre" focusColor="#27e443" layoutX="142.0" layoutY="141.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite nombre del cliente" style="-fx-prompt-text-fill: #8b8c8e; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="135.0" />
+      <Label layoutX="41.0" layoutY="141.0" prefHeight="25.0" prefWidth="76.0" text="Nombre:" textFill="WHITE" AnchorPane.topAnchor="141.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="188.0" prefHeight="25.0" prefWidth="76.0" text="Apellido:" textFill="WHITE" AnchorPane.topAnchor="188.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="apellido" focusColor="#27e443" layoutX="142.0" layoutY="175.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite apeliido del cliente" style="-fx-prompt-text-fill: #8b8c8e; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="182.0" />
+      <Label layoutX="41.0" layoutY="233.0" prefHeight="25.0" prefWidth="76.0" text="Telefono(s)" textFill="WHITE" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="telefono" focusColor="#27e443" layoutX="142.0" layoutY="235.0" prefHeight="25.0" prefWidth="155.0" promptText="Digite telefono(s) del cliente" style="-fx-prompt-text-fill: #8b8c8e; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="229.0" />
+      <JFXTextField fx:id="direccion" focusColor="#27e443" layoutX="142.0" layoutY="282.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite nombre de cliente" style="-fx-prompt-text-fill: #8b8c8e; -fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="282.0" />
+      <Label layoutX="41.0" layoutY="282.0" prefHeight="25.0" prefWidth="76.0" text="Direccion" textFill="WHITE" AnchorPane.topAnchor="282.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="registrarButton" layoutX="129.0" layoutY="344.0" text="Registrar Cliente" textFill="WHITE" />
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="329.0" layoutY="4.0" onMouseClicked="#onExitButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/equis.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
